@@ -7,6 +7,10 @@ builds:
 - env:
   - GO111MODULE=on
   - CGO_ENABLED=0
+  goos:
+    - windows
+    - linux
+    - darwin
 archives:
 - replacements:
     darwin: Darwin
